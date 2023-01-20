@@ -1,0 +1,33 @@
+/****************************inheritance*******************/
+
+
+#include <iostream>
+using namespace std;
+
+class vehicle
+{
+    public:
+    string brand="dhaval";
+    void myfunction()
+    {
+        cout<<"hello ward \n ";
+        
+    }
+    
+};
+
+class car : public vehicle
+{
+    public:
+    string model = "dharmik";
+    
+};
+
+int main()
+{
+    car mycar;
+    mycar.myfunction();
+    cout<<mycar.brand<<" "<<mycar.model;
+    
+    return 0;
+}

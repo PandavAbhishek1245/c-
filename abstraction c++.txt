@@ -1,0 +1,45 @@
+
+
+/************************abstraction*************************/
+
+#include <iostream>
+using namespace std;
+
+class test 
+{
+    private:
+    int mynum=10;
+    
+    
+    public:
+    int getmynum()
+    {
+        return mynum;
+    }
+     
+    void setnum(int myy)
+    {
+        mynum=myy;
+    }
+
+    
+};
+
+int main()
+{
+    test t;
+    
+    int aa;
+    
+    cout<<"\n before set val = "<<t.getmynum();
+    
+    cout<<"\nenter val =";
+    cin>>aa;
+    
+    t.setnum(aa);
+    
+    cout<<t.getmynum();
+    
+    return 0;
+    
+}

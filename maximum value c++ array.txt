@@ -1,0 +1,30 @@
+/*****************************maximum value ***************************/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a[5],b,max;
+    
+    cout <<"enter array = ";
+    cin>>b;
+    
+    for(int i=0; i<b; i++)
+    {
+        cin>>a[i];
+    }
+    
+    max=a[0];
+    
+    for(int i=0; i<b; i++)
+    {
+        if(a[i]>max)
+        {
+            max=a[i];
+        }
+       
+    }cout<<"max  = "<<max;
+ 
+    return 0;
+}

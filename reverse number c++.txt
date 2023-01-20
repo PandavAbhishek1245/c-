@@ -1,0 +1,39 @@
+/******************reverse number *******************/
+
+
+#include <iostream>
+Using namespace std;
+int main()
+{
+    int a,j=0,i=0;
+    
+    cout<<"enter number";
+    cin>>a;
+    
+    while(a!=0)
+    {
+        i=a%10;
+        j=j*10+i;
+        a/=10;
+    }
+     
+   Cout<<"ans%d"<<j;
+   
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

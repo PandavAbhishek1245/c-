@@ -1,0 +1,28 @@
+/********************************m table with function**************/
+
+#include <iostream>
+using namespace std;
+
+void myfunction(int num)
+{   
+    int a;
+    
+    for(int i=1; i<=10; i++)
+    {
+         a=num*i;
+         cout<<num <<"*" <<i <<"=" <<a <<"\n";
+    }
+  
+}
+
+int main()
+{
+    int num;
+    
+    cout<<"enter number";
+    cin >>num;
+    
+    myfunction(num);
+    
+    return 0;
+}

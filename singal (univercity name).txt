@@ -1,0 +1,36 @@
+/*********************************singal ****************/
+
+#include <iostream>
+using namespace std;
+
+class univercity
+{
+    public:
+    string name = "vnsgu";
+    
+     univercity()
+    {
+        cout<<" aa "<< "\n";
+      
+    }
+    
+};
+
+class college : public univercity
+{
+    public:
+    
+    string subject = "maths";
+    
+    
+};
+
+int main()
+{
+    college mycollege;
+   
+    cout<<"ans = "<<mycollege.name <<"  "<<mycollege.subject<<endl;
+    
+    return 0;
+}
+

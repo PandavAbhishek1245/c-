@@ -1,0 +1,96 @@
+/************************multiple inheritance *********************/
+
+#include <iostream>
+using namespace std;
+
+class vahicle 
+{
+    public:
+    
+    vahicle()
+    {
+        cout<<"this is vahicle \n ";
+        
+    }
+};
+
+class fourviler 
+{
+    public:
+    
+    fourviler()
+    {
+        cout<<"this is fourviler \n ";
+        
+    }
+};
+
+class car: public vahicle , public fourviler
+{
+  
+};
+
+int main()
+{
+    car obj;
+    
+    return 0;
+}
+
+/****************multiple inheritance**************************/
+
+#include <iostream>
+using namespace std;
+
+class A 
+{
+    public:
+    int a;
+    
+    A()
+    {
+        cout<<"enter a value = ";
+        cin>>a;
+    }
+    
+};
+
+class B 
+{
+    public:
+    int b;
+    
+    B()
+    {
+        cout<<"enter b value = ";
+        cin>>b;
+    }
+};
+
+
+class C :public A , public B 
+{
+    public:
+    int p;
+    
+    C()
+    {   
+        
+        p=a*b;
+        cout<<"ans = "<<p;  
+        
+    }
+};
+
+int main()
+{
+    C obj;
+    
+    return 0; 
+}
+
+
+
+
+
+

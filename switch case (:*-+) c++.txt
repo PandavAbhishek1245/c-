@@ -1,0 +1,46 @@
+/*************************(/*-+)*************/
+
+
+#include <iostream>
+using namespace std;
+ int main()
+ {   
+     int a,b;
+     char ch;
+     
+      cout<<"enter a value = ";
+      cin>>a;
+      
+      cout<<"enter b value = ";
+      cin>>b;
+      
+      cout<<"enter character =";
+      cin>>ch;
+     
+     switch(ch)
+     {
+        
+        case '+':
+        cout<<"your adition is = "<< a+b;
+        break;
+        
+        case '-':
+        cout<<"your subtaction is ="<< a-b;
+        break;
+        
+        case '*':
+        cout<<"your multiplication is ="<< a*b;
+        break;
+        
+        case '/':
+        cout<<"your divison is ="<<a/b;
+        break;
+      
+        default:
+          cout<<"not walid ";
+ 
+        }
+     
+     return 0;
+   
+ }

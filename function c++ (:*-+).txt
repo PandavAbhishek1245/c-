@@ -1,0 +1,50 @@
+/*****calander number********************/
+#include <iostream>
+using namespace std;
+
+void myfunction (int a,int b,char ch)
+{
+    
+     switch(ch)
+    {
+        case '+':
+        cout<<"addition is = "<<a+b;
+        break;
+        
+        case '-':
+        cout<<"subtraction is = "<<a-b;
+        break;
+        
+        case '*':
+        cout<<"multiplication is = "<<a*b;
+        break;
+        
+        case '/':
+        cout<<"divison is = "<<a/b;
+        break;
+        
+       
+        
+    }
+
+    
+}
+
+int main()
+{
+    int a,b;
+    char ch;
+    
+  
+    cout<<"enter a value = ";
+    cin>>a;
+    
+    cout<<"enter b value = ";
+    cin>>b;
+    
+    cout<<"enter character =";
+    cin>>ch;
+    myfunction(a,b,ch);
+      
+ 
+}

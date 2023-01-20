@@ -1,0 +1,92 @@
+
+
+/***********************************singal class method (multiplication)***********/
+#include <iostream>
+using namespace std;
+
+class shape
+{   
+    public:
+    int length;
+    int width;
+    
+    protected:
+    void function1()
+    {
+        cout<<"enter length = ";
+        cin>>length;
+        
+        cout<<"enter width = ";
+        cin>>width;
+     }
+  
+};
+
+class rectangle : public shape 
+{   
+    int area;
+    
+    public:
+     void rectanglearea()
+    {
+       function1();
+        area = length * width;
+        cout<<"ans = "<<area;
+        
+    }
+};
+
+int main()
+{
+    rectangle rec;
+    rec.rectanglearea();
+    
+    return 0;
+}
+
+
+
+/**************************with perameter multi***********/
+#include<iostream>
+using namespace std;
+ 
+class A
+{
+    protected:
+    int a;
+   
+    public:
+        void function1(int x)
+        {
+             a=x;           
+        }
+   
+};
+ 
+class B: public A
+{
+    int b,p;
+     
+    public:
+        void function2(int x,int y)
+        {
+           function1(x);
+            b=y;
+        }
+        
+        void function3()
+        {
+            p=a*b;
+            cout<<endl<<"multiplication =  "<<a<<" * "<<b<<" = "<<p;
+        }
+         
+};
+ 
+int main()
+{
+    B _b;
+    _b.function2(4,5);
+    _b.function3();
+     
+    return 0;
+}

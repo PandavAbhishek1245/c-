@@ -1,0 +1,84 @@
+/********************************array*************/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a[5]={1,2,3,4,5};
+    
+  cout<<a[0]<<"\n";
+  cout<<a[1]<<"\n";
+  cout<<a[2]<<"\n";
+  cout<<a[3]<<"\n";
+  cout<<a[4]<<"\n";
+    
+    return 0;
+}
+
+
+/****************************array*******************/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int a[5];
+   
+  cout<<"enter value =";
+  cin>>a[0];
+   
+  cout<<"ans = "<<a[0];
+}
+
+
+/******************************multy***********/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a[3][2] = {1,2,3,4,5,6};
+    
+   
+    cout<<a[0][0]<<endl;
+    cout<<a[0][1]<<endl;
+    cout<<a[1][0]<<endl;
+    cout<<a[1][1]<<endl;
+    cout<<a[2][0]<<endl;
+    cout<<a[2][1]<<endl;
+    
+    
+    
+    return 0;
+}
+
+/***********************user****************/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a[3][2];
+    
+    cout<<"enter number =";
+    cin>>a[0][0];
+    
+    cout<<"enter number =";
+    cin>>a[0][1];
+    
+    cout<<"enter number =";
+    cin>>a[1][0];
+    
+    cout<<"enter number =";
+    cin>>a[1][1];
+    
+    cout<<"enter number =";
+    cin>>a[2][0];
+    
+    cout<<"enter number = ";
+    cin>>a[2][1];
+    
+    cout<<"ans = "<<a[1][1];
+    
+    return 0;
+}

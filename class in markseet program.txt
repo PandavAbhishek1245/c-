@@ -1,0 +1,62 @@
+/***************class in markseet**************/
+
+#include <iostream>
+using namespace std;
+int a=1;
+class student
+{  
+    public:
+    string schoolname;
+    string name;
+    char divison;
+    int rollnumber;
+    int gujrati;
+    int hindi;
+    int english;
+    int sanskrut;
+    int total;
+    
+};
+
+int main()
+{
+    student s1;
+    
+    while(a==1)
+    {
+        cout<<"enter your school name = ";
+        cin>>s1.schoolname;
+        
+        cout<<"enter your name = ";
+        cin>>s1.name;
+        
+        cout<<"enter you divison =";
+        cin>>s1.divison;
+        
+        cout<<"enter you rollnumber =";
+        cin>>s1.rollnumber;
+        
+        cout<<"gujrati marks =";
+        cin>>s1.gujrati;
+        
+        cout<<"hindi marks = ";
+        cin>>s1.hindi;
+        
+        cout<<"english marks = ";
+        cin>>s1.english;
+        
+        cout<<"sanskrut marks = ";
+        cin>>s1.sanskrut;
+        
+        s1.total=s1.gujrati+s1.hindi+s1.english+s1.sanskrut;
+        
+        cout<<"your total = "<<s1.total;
+        cout<<endl;
+        
+        cout<<"press 1 to enter markshet = ";
+        cin>>a;
+        
+        return 0;
+      
+    }
+}

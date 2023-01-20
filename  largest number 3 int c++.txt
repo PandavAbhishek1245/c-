@@ -1,0 +1,33 @@
+/*******************************largest number among three integer value *****************/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a,b,c;
+    
+    cout << "enter a value = ";
+    cin >>a;
+    
+    cout << "enter b value = ";
+    cin >>b;
+    
+    cout<<"enter c value =";
+    cin >>c;
+    
+    if(a>b && a>c)
+    {
+        cout << "a is largest number to b and c ";
+    }
+    else if(b>a && b>c)
+    {
+        cout << "b is largest number to a and c ";
+    }
+    else if(c>a && c>b)
+    {
+        cout << "c is largest number to a and b ";
+    }
+    
+    return 0;
+}

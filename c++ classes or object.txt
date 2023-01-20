@@ -1,0 +1,68 @@
+/*******************creat object*********/
+
+#include <iostream>
+using namespace std;
+
+class myclass
+{
+    public:
+    int mynum;
+    string mystring;
+};
+
+int main()
+{
+    myclass myobj;
+    
+    myobj.mynum=13;
+    myobj.mystring="abhishek";
+    
+    cout<<myobj.mynum<<endl;
+    cout<<myobj.mystring;
+    
+    return 0;
+}
+
+
+/************************multiple object*************************/
+#include <iostream>
+using namespace std;
+
+class mycar
+{
+    public:
+    string brand;
+    string model;
+    int year;
+};
+
+int main()
+{
+    mycar carobj1;
+    
+    carobj1.brand ="BMW";
+    carobj1.model ="x5";
+    carobj1.year = 2017;
+    
+    cout<<" "<<carobj1.brand;
+    cout<<" "<<carobj1.model;
+    cout<<" "<<carobj1.year;
+    
+    mycar carobj2;
+    
+    carobj2.brand ="tata";
+    carobj2.model = "x6";
+    carobj2.year = 2018;
+    
+    cout<<" \n"<<carobj2.brand;
+    cout<<" "<<carobj2.model;
+    cout<<" "<<carobj2.year;
+    
+   
+    return 0;
+    
+}
+
+
+
+

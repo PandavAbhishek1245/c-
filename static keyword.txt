@@ -1,0 +1,69 @@
+/*****************************static keyword**************/
+
+/1)************************static variable***********/
+#include <iostream>
+using namespace std;
+
+class myclass
+{
+    public:
+    
+    static int i;
+    static int bd;
+   
+};
+
+int myclass::i=60;
+int myclass::bd=560;
+
+int main()
+{
+    myclass obj1;
+    
+    // myclass::aa();
+     
+    cout<<"\n"<<obj1.i;
+    cout<<"\n"<<obj1.bd;
+    
+    return 0;
+}
+
+/2)************************static function ***********/
+
+
+#include <iostream>
+using namespace std;
+
+class myclass
+{
+    public:
+    
+    static int i;
+    static int bd;
+    static void aa()
+    {
+        i=20;
+        bd=30;
+        cout<<"\n.static funtion "<<". -------------";
+    }
+};
+
+int myclass::i=60;
+int myclass::bd=560;
+
+int main()
+{
+    myclass obj1;
+    
+    myclass::aa();
+     
+    cout<<"\n"<<obj1.i;
+    cout<<"\n"<<obj1.bd;
+    
+    return 0;
+}
+
+
+
+
+

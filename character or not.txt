@@ -1,0 +1,23 @@
+/**********************************alphabet or not******/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char ch;
+    
+    cout<<"enter n number = ";
+    cin >>ch;
+    
+    if((ch>='a' && ch <='z')||(ch >='A' && ch <='Z'))
+    {
+        cout<<"this alphabet ";
+    }
+    else 
+    {
+       cout<<"this  is not alphabet";
+    }
+   
+    return 0;
+}
+

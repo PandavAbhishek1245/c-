@@ -1,0 +1,33 @@
+/***********************constrauter*******************/
+
+#include <iostream>
+using namespace std;
+
+class mycar
+{  
+   public:
+   string brand;
+   string model;
+   int year;
+   
+   mycar(string x,string y, int z)
+   {
+       brand=x;
+       model=y;
+       year=z;
+       
+   }
+   
+};
+
+int main()
+{
+  mycar mycarobj1("bmw","x5",2015);
+ 
+  cout<<"ans"<<mycarobj1.brand<<endl;
+  cout<<"ans"<<mycarobj1.model<<endl;
+  cout<<"ans"<<mycarobj1.year<<endl;
+ 
+  return 0;
+  
+}

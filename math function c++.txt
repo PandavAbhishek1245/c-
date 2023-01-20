@@ -1,0 +1,80 @@
+/*****************************maths function**************************/
+/*********************ceil***************/
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    float a = 10.31;
+    
+    cout<<"ans = "<<ceil(a);
+    
+    return 0;
+}
+
+/***********************************floor***********/
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    float a=10.31;
+    
+    cout<<"ans = "<<floor(a);
+    
+    return 0;
+}
+
+
+/*****************pow**********************/
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+
+int main()
+{
+    float a=2,b=4;
+    
+    
+  cout<<"ans ="<<pow(a,b);
+    
+    return 0;
+}
+
+/*******************abs**********************/
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    int a= -22;
+    
+    cout<<"ans = "<<abs(a);
+    
+    return 0;
+}
+
+
+
+/*************************************sqrt*****************************/
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    double a=9;
+    
+    cout<<"ans ="<<sqrt(a);
+    
+    return 0;
+}
+
+
+
+

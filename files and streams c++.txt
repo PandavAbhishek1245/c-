@@ -1,0 +1,88 @@
+/******************files and streams************/
+/*****************ofstream********************/
+
+
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    ofstream filestream ("myfile");
+    
+    
+    if(filestream.is_open())
+    {
+        filestream<<"welcome to javapoint \n";
+        filestream<<"c++ tutorial \n";
+        
+        filestream.close();
+    }
+    
+    else
+    {
+        cout<<"file opening is file";
+    }
+    
+    return 0;
+}
+
+/*********************ifstream********************/
+
+#include <iostream>  
+#include <fstream>  
+using namespace std;  
+int main () 
+{  
+  string obj1;  
+  ifstream obj2("myfile");  
+  if (obj2.is_open())  
+  {  
+    while ( getline (obj2,obj1) )  
+    {  
+      cout << obj1 <<endl;  
+    }  
+    obj2.close();  
+  }  
+  else {  
+      cout << "File opening is fail."<<endl;   
+    }  
+  return 0;  
+}  
+
+/*************************fstream*********************/
+
+#include <fstream>  
+#include <iostream>  
+using namespace std;  
+int main () {  
+   char input[75];  
+   ofstream os;  
+   os.open("testout.txt");  
+   cout <<"Writing to a text file:" << endl;  
+   cout << "Please Enter your name: ";   
+   cin.getline(input, 100);  
+   os << input << endl;  
+   cout << "Please Enter your age: ";   
+   cin >> input;  
+   cin.ignore();  
+   os << input << endl;  
+   os.close();  
+   ifstream is;   
+   string line;  
+   is.open("testout.txt");   
+   cout << "Reading from a text file:" << endl;   
+   while (getline (is,line))  
+   {  
+   cout << line << endl;  
+   }      
+   is.close();  
+   return 0;  
+}  
+
+
+
+
+
+
+

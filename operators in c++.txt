@@ -1,0 +1,137 @@
+/********************c++ hello ward **************************************/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "hello ward ";
+    
+    return 0;
+}
+
+
+/*********************adition**********************/
+#include <iostream>
+using namespace std;
+int main()
+
+{    
+    int x,y,sum;
+    
+    cout <<"enter x val =";
+    cin >> x;
+    
+    cout << "enter y val =";
+    cin >> y;
+    
+     sum = x+y;
+    
+    cout << "adition = ";
+    
+    cout << sum;
+    
+    return 0;
+
+}
+
+/********************subtaction ********************/
+#include <iostream>
+using namespace std;
+int main()
+
+{    
+    int x,y,sum;
+    
+    cout <<"enter x val =";
+    cin >> x;
+    
+    cout << "enter y val =";
+    cin >> y;
+    
+     sum = x-y;
+    
+    cout << "subtraction = ";
+    
+    cout << sum;
+    
+    return 0;
+
+}
+
+
+/***********************multiplication**********************/
+#include <iostream>
+using namespace std;
+int main()
+
+{    
+    int x,y,sum;
+    
+    cout <<"enter x val =";
+    cin >> x;
+    
+    cout << "enter y val =";
+    cin >> y;
+    
+     sum = x*y;
+    
+    cout << "multiplication = ";
+    
+    cout << sum;
+    
+    return 0;
+
+}
+
+/1)*****************divison****************************/
+
+#include <iostream>
+using namespace std;
+int main()
+
+{    
+    int x,y,sum;
+    
+    cout <<"enter x val =";
+    cin >> x;
+    
+    cout << "enter y val =";
+    cin >> y;
+    
+     sum = x/y;
+    
+    cout << "divison = ";
+    
+    cout << sum;
+    
+    return 0;
+
+}
+
+
+2)/**************************quotient/remainder******************/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int dividend,divisor,quotient,remainder;
+    
+    cout <<"enter dividend =";
+    cin >> dividend;
+ 
+    cout <<"enter divisor =";
+    cin >> divisor;
+    
+   quotient = dividend/divisor;
+   remainder = dividend%divisor;
+   
+   cout<<"quotient ="<<quotient;
+   cout<<"\nremainder ="<<remainder;
+   
+    
+    return 0;
+}
+
+

@@ -1,0 +1,22 @@
+/******prime number********************/
+
+#include <iostream>
+Using namespace std;
+
+ int main()
+{ 
+    int i,a;
+    
+    cout<<"enter your number =";
+    cin>>a;
+    
+    for(i=1; i<=a; i++)
+    {
+        if(a%i!=0)
+        {
+            Cout<<"\n prime number is ="<<i;
+        }
+    }
+    
+   return 0; 
+}

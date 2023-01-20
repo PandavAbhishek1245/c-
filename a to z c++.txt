@@ -1,0 +1,18 @@
+/********************************a to z number print *********************/
+ 
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char ch;
+    
+    cout << "alphabet number = \n";
+    
+    for(ch='a'; ch<='z'; ch++) 
+    {
+        cout << ch << "\n";
+    }
+    
+    return 0;
+}

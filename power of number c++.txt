@@ -1,0 +1,21 @@
+/******************power of number *******************/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a,b,d=1;
+    
+    cout<<"enter a value = ";
+    cin>>a;
+    
+    cout<<"enter b value = ";
+    cin>>b;
+    
+    for(int i=1; i<=b; i++)
+    {
+        d=d*a;
+    }  
+       cout<<"power of number is "<<d;
+    return 0;
+}

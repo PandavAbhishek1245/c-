@@ -1,0 +1,18 @@
+/**********************************multiplication table **********************/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num,a;
+    
+    cout<<"enter number";
+    cin >>num;
+    
+    for(int i=1; i<=10; i++)
+    {
+         a=num*i;
+         cout<<num <<"*" <<i <<"=" <<a <<"\n";
+    }
+}

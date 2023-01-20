@@ -1,0 +1,48 @@
+/***************************polymorphism**********************/
+
+#include <iostream>
+using namespace std;
+
+class parent
+{
+    public:
+    
+     virtual void print()
+    {
+       cout<<"print parent "<<endl;
+    }
+    
+    void show()
+    {
+        cout<<"show parent "<<endl;
+    }
+};
+
+class child : public parent
+{
+    public:
+    
+    void print()
+    {
+       cout<<"print child "<<endl; 
+    }
+    
+    void show ()
+    {
+        cout<<"show child "<<endl;
+    }
+};
+
+int main()
+{
+    parent *bptr;
+    child d;
+    bptr= &d;
+    
+    bptr ->print();
+    
+    bptr ->show();
+    
+  
+    return 0;
+}

@@ -1,0 +1,45 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+struct mybookinfo 
+{   
+    int bookid;
+    char bookname[15];
+    char bookauthor[15];
+    int isavailable;
+    
+};
+
+int main()
+{
+    struct mybookinfo s1;
+    
+    s1.bookid=0001;
+    strcpy(s1.bookname,"bhagvatgita");
+    strcpy(s1.bookauthor,"valmiki");
+    s1.isavailable=1;
+    
+    cout<<" bookid : "<<s1.bookid<<endl;
+    cout<<"bookname : "<<s1.bookname<<endl;
+    cout<<"bookauthor : "<<s1.bookauthor<<endl;
+    cout<<"isavailable : "<<s1.isavailable<<endl;
+    
+    
+    cout<<"*****************************\n";
+    
+    struct mybookinfo s2;
+    
+    s2.bookid=0002;
+    strcpy(s2.bookname,"ramayan");
+    strcpy(s2.bookauthor,"ddd");
+    s2.isavailable=1;
+    
+    cout<<"bookid : "<<s2.bookid<<endl;
+    cout<<"bookname : "<<s2.bookname<<endl;
+    cout<<"bookauthor : "<<s2.bookauthor<<endl;
+    cout<<"isavailable : "<<s2.isavailable<<endl;
+    
+   return 0;
+    
+}

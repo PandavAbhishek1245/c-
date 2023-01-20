@@ -1,0 +1,57 @@
+/*****************************strcpy***************************/
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main()
+{
+  char a[]={"hello"};
+  char b[]={"word"};
+   
+  strcpy(a,b);
+   
+  cout<<"ans = "<<a;
+ 
+  return 0;
+ 
+ }
+
+/*************************strcat*********************/
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main()
+{
+    char a[15]={"hello"};
+    char b[15]={"word"};
+    
+    strcat(a,b);
+    
+    cout<<"ans = "<<a;
+    
+    return 0;
+}
+
+/*******************strlen**************/
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main()
+{
+    char a[] = {"hello"};
+    char b[] = {"word"};
+  
+    int i=0;
+    
+    i=strlen(a);
+    
+    cout<<"ans = "<<i;
+    
+    return 0;
+    
+}
+
+
+

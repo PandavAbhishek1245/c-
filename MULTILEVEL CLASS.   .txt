@@ -1,0 +1,115 @@
+/*********************************MULTILEVEL CLASS***********************/
+#include <iostream>
+using namespace std;
+
+class A 
+{
+    public:
+    int a;
+    
+    A()
+    {
+        cout<<"enter a value = ";
+        cin>>a;
+    }
+    
+};
+
+class B : public A
+{
+    public:
+    int b;
+    
+    B()
+    {
+        cout<<"enter b value = ";
+        cin>>b;
+    }
+};
+
+
+class C : public B 
+{
+    public:
+    int p;
+    
+    C()
+    {   
+        
+        p=a*b;
+        cout<<"ans = "<<p;  
+        
+    }
+};
+
+int main()
+{
+    C obj;
+    
+    return 0; 
+}
+
+
+/***********************************************************/
+/*********************************MULTILEVEL CLASS***********************/
+#include <iostream>
+using namespace std;
+
+class A 
+{
+    public:
+    int a;
+    
+    void function1()
+    {
+        cout<<"enter a value = ";
+        cin>>a;
+    }
+    
+};
+
+class B : public A
+{
+    public:
+    int b;
+    
+    void function2()
+    {
+        cout<<"enter b value = ";
+        cin>>b;
+    }
+};
+
+
+class C : public B 
+{
+    public:
+    int p;
+    
+    void function3()
+    {   
+        
+        p=a*b;
+        cout<<"ans = "<<p;  
+        
+    }
+};
+
+int main()
+{
+    C obj;
+    obj.function1();
+    obj.function2();
+    obj.function3();
+    return 0; 
+}
+
+
+
+
+
+
+
+
+
+

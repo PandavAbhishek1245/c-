@@ -1,0 +1,23 @@
+/*****************************strcpy user***************************/
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main()
+{
+    char a[10];
+    char b[10];
+    
+    
+   cout<<"enter a value = ";
+   cin>>a;
+   
+   cout<<"enter b value = ";
+   cin>>b;
+   
+   strcpy(a,b);
+   
+   cout<<"ans = "<<a;
+   
+   return 0;
+}
